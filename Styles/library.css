@@ -1,1 +1,134 @@
-
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-size: cover;
+  background-color: #2d2d2d;
+}
+.button-ordinary {
+  padding: 10px 20px;
+  background-color: #3c3c3c;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.button-download {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.button-Withoutbackground {
+  background: none;
+  border: solid 1px;
+  border-radius: 2em;
+  padding: 0.75em 2em;
+  color: #77ff4c;
+}
+.gradient-button {
+  padding: 10px 20px;
+  background: linear-gradient(315deg, rgb(1, 128, 111) 3%, rgba(10,162,306,1) 38%, rgb(48, 238, 181) 68%, rgb(0, 218, 181) 98%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+a,p,text {
+  color: #ffffff;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #ffffff;
+}
+.div {
+  background-color: #505050;
+}
+.footer {
+  background-color: #202020;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px;
+  border: 0px solid #444;
+  border-radius: 20px;
+}
+#offline-notification {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  z-index: 9999;
+}
+#offline-notification.show {
+  display: block;
+}
+.neon {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #b303f8, 0 0 80px #b303f8, 0 0 90px #b303f8, 0 0 100px #b303f8, 0 0 150px #b303f8;
+  }
+  .checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #414141;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #383838;
+  }
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #75f144;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #f1f1f1;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
