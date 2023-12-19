@@ -20,6 +20,5 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
-.txt
-README.md
-.bat
+#Batch file
+s.bat
